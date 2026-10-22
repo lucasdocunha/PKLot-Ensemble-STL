@@ -36,6 +36,6 @@ echo "DATASETS_ROOT=$DATASETS_ROOT | EPOCHS=$EPOCHS | FAMILIES=$FAMILIES | FRAC=
 "$PYTHON" run_families.py --stage fusion --frac "$FRAC"
 
 # 5. Fusão cross-família (1 modelo por família)
-"$PYTHON" fusion_families.py --cross --frac "$FRAC"
+"$PYTHON" -m src.pipeline.fusion_families --cross --frac "$FRAC"
 
 echo "Pipeline concluído."

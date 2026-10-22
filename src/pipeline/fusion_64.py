@@ -31,7 +31,7 @@ DATASETS_TEST = [
 ]
 BATCHES = ["64", "128", "256", "512", "1024"]
 
-OUTPUT_CSV = os.path.join(PROJECT_ROOT, "resultados", "fusion_metrics_64.csv")
+OUTPUT_CSV = os.path.join(PROJECT_ROOT, "results", "fusion_metrics_64.csv")
 
 
 # =========================================================

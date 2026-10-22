@@ -61,7 +61,7 @@ def stage_fusion(args):
                  "python run_families.py --stage cls")
     # No estágio de fusão, as famílias são os prefixos das pastas (Modelo_AE,...).
     fusion_families = args.fusion_families or "all"
-    run([PY, "fusion_families.py", "--families", fusion_families,
+    run([PY, "-m", "src.pipeline.fusion_families", "--families", fusion_families,
          "--frac", str(args.frac)])
 
 

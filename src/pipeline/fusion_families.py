@@ -35,12 +35,12 @@ from sklearn.metrics import (
     accuracy_score, f1_score, precision_score, recall_score, roc_auc_score,
 )
 
-from fusion import fusion_max, fusion_mult, fusion_sum, fusion_vote
+from src.pipeline.fusion_64 import fusion_max, fusion_mult, fusion_sum, fusion_vote
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 logger = logging.getLogger(__name__)
 
-PROJECT_ROOT = Path(__file__).resolve().parent
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
 MODELOS_DIR = PROJECT_ROOT / "Modelos"
 CSV_DIR = PROJECT_ROOT / "CSV"
 
