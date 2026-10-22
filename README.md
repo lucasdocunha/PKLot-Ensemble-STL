@@ -124,8 +124,8 @@ Using [`uv`](https://docs.astral.sh/uv/) guarantees reproducible dependency reso
 
 ```bash
 # Clone the repository
-git clone https://github.com/lucasdocunha/Representation-Fusion.git
-cd Representation-Fusion
+git clone https://github.com/lucasdocunha/PKLot-Ensemble-STL.git
+cd PKLot-Ensemble-STL
 
 # Synchronize virtual environment with lockfile
 uv sync
